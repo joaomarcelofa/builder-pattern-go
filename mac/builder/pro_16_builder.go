@@ -31,7 +31,7 @@ func (bi *MacBookPro16Builder) SetScreenSize() Builder {
 	return bi
 }
 
-// Build a new MacBook Pro 16"
+// Build Build a new MacBook Pro 16"
 func (bi *MacBookPro16Builder) Build() (basicInterface, error) {
 	macbook := &MacBook{
 		processor:   bi.processor,
