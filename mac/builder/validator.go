@@ -6,6 +6,7 @@ import (
 	"github.com/joaomarcelofa/builder_factory/mac/hardware"
 )
 
+// validateMacConfig Checks if mac has all hardware configs setted
 func validateMacConfig(macbook *MacBook) error {
 	if !isRAMMemorySetted(macbook.ramSize) {
 		return fmt.Errorf("storage size not setted")

@@ -5,6 +5,7 @@ import (
 	"reflect"
 )
 
+//TransformMacInterface Transforms the mac interface into concrete MacBook
 func TransformMacInterface(macInterface basicInterface) (*MacBook, error) {
 	macbook, ok := reflect.ValueOf(macInterface).Interface().(*MacBook)
 	if !ok {

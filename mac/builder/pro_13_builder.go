@@ -2,7 +2,7 @@ package builder
 
 import "github.com/joaomarcelofa/builder_factory/mac/hardware"
 
-//MacBookPro13Builder is a MacBook Air implementation
+//MacBookPro13Builder is a MacBook Pro 13 implementation
 type MacBookPro13Builder struct {
 	Builder
 	processor   hardware.Processor
@@ -31,6 +31,7 @@ func (bi *MacBookPro13Builder) SetScreenSize() Builder {
 	return bi
 }
 
+//Build Build a new MacBook Pro 13"
 func (bi *MacBookPro13Builder) Build() (basicInterface, error) {
 	macbook := &MacBook{
 		processor:   bi.processor,

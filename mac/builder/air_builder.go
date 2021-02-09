@@ -32,6 +32,7 @@ func (bi *MacBookAirBuilder) SetScreenSize() Builder {
 	return bi
 }
 
+//Build Build a new MacBook Air
 func (bi *MacBookAirBuilder) Build() (basicInterface, error) {
 	macbook := &MacBook{
 		processor:   bi.processor,
